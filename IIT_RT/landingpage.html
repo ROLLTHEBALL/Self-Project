@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+         
+            <a href="#" ><img src="image/LogoRT.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rockets</a></li>
+                <li><a href="#">Sponsors</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="log-button"><button><a href="Login_2.html">Login</a></button></div>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Rocket science is not really rocket science<br>It's <span>IITB Rocket Team</span></h2>
+                <p>(Do not confuse this team with the incompetent bad guys who come in once per episode to try and steal Pikachu). It all started in the summer of 2019; a group of students had a goal: to introduce rocketry to a campus with no formal program for such projects. Rocket Team was created to fill that void.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="image/Logo3.png" class="lg3">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="image/Logo2.png" onclick="imgSlider('image/Logo2.png');changeCircleColor('#017143')"></li>
+            <li><img src="image/Logo3.png" onclick="imgSlider('image/Logo3.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="image/Logo4.png" onclick="imgSlider('image/Logo4.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="image/facebook1c .png"></a></li>
+            <li><a href="#"><img src="image/twitter1c.png"></a></li>
+            <li><a href="#"><img src="image/instagram1c.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.lg3').src=anything;
+        }
+        function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>
